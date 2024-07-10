@@ -1,0 +1,16 @@
+<h2>Enter Card Details</h2>
+<form id="cardForm" (ngSubmit)="onSubmit($event)">
+    <div class="form-group">
+        <label for="title">Card Title</label>
+        <input type="text" class="form-control" id="title" placeholder="Enter card title" [(ngModel)]="cardTitle" name="title" required>
+    </div>
+    <div class="form-group">
+        <label for="description">Card Description</label>
+        <input class="form-control" id="description" placeholder="Enter card description" [(ngModel)]="cardDescription" name="description" required>
+    </div>
+    <div class="form-group">
+        <label for="imageUrl">Image URL</label>
+        <input type="url" class="form-control" id="imageUrl" placeholder="Enter image URL" [(ngModel)]="cardImageUrl" name="imageUrl" required>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>

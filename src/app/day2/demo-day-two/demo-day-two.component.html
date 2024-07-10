@@ -1,0 +1,8 @@
+<!-- Evenet handler -->
+
+
+<input type="button" value="Click me" (click)="onButtonClick()" >
+
+<!-- input property -->
+<input type="text" [value]="getDataFromInput" #inputRef (keyup)="onTextChange(inputRef.value)"  >
+<h1>this is change detection : {{getDataFromInput}} </h1>
